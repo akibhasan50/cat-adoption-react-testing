@@ -40,7 +40,7 @@ describe("Check favoured or not", () => {
     expect(screen.getByAltText(/filled heart/i)).toBeInTheDocument();
   });
   test("should toggle heart status", () => {
-    render(<Card {...cardProps} ></Card>);
+    render(<Card {...cardProps}></Card>);
     userEvents.click(screen.getByRole("button"));
 
     expect(screen.queryByAltText(/outlined heart/i)).not.toBeInTheDocument();

@@ -8,12 +8,12 @@ const Filter = ({ filters, setFilters }) => (
         name="favourite"
         id="favourite"
         className="form-select"
-        onChange={(e) => {
-          setFilters({
-            ...filters,
-            favoured: e.target.value,
-          });
-        }}
+        // onChange={(e) => {
+        //   setFilters({
+        //     ...filters,
+        //     favoured: e.target.value,
+        //   });
+        // }}
       >
         <option value="any">Any</option>
         <option value="favoured">Favoured</option>
@@ -26,12 +26,12 @@ const Filter = ({ filters, setFilters }) => (
         name="gender"
         id="gender"
         className="form-select"
-        onChange={(e) => {
-          setFilters({
-            ...filters,
-            gender: e.target.value,
-          });
-        }}
+        // onChange={(e) => {
+        //   setFilters({
+        //     ...filters,
+        //     gender: e.target.value,
+        //   });
+        // }}
       >
         <option value="any">Any</option>
         <option value="male">Male</option>

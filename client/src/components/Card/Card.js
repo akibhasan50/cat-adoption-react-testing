@@ -8,14 +8,14 @@ const Card = ({ name, phone, email, image, favoured, index }) => {
   const { cats, setCats } = useContext(PetsContext);
   const [isFavoured, setIsFavoured] = useState(favoured);
 
-  const updateFavourite = (index, favoured) => {
-    const updatedCats = [...cats];
-    updatedCats[index].favoured = favoured;
-    setCats(updatedCats);
-  };
+  // const updateFavourite = (index, favoured) => {
+  //   const updatedCats = [...cats];
+  //   updatedCats[index].favoured = favoured;
+  //   setCats(updatedCats);
+  // };
 
   const toggleFavoured = () => {
-    updateFavourite(index, !isFavoured);
+    //updateFavourite(index, !isFavoured);
     setIsFavoured(!isFavoured);
   };
 

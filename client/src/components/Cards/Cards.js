@@ -2,9 +2,9 @@ import { useContext } from "react";
 import Card from "../Card/Card";
 import { PetsContext } from "../Pets/Pets";
 import "./Cards.css";
-
+import cats from "../../mocks/cats.json";
 const Cards = () => {
-  const { cats } = useContext(PetsContext);
+  //const { cats } = useContext(PetsContext);
 
   return (
     <div className="pet-cards-container">
@@ -20,7 +20,7 @@ const Cards = () => {
             index={index}
           />
         );
-      })}
+      })} 
     </div>
   );
 };
