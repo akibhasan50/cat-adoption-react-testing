@@ -10,6 +10,6 @@ app.get("/cats", async (req, res) => {
   return res.json(cats);
 });
 
-app.listen(4000, () => {
+app.listen(7000, () => {
   console.log("listening");
 });

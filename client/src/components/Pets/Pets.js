@@ -19,7 +19,7 @@ const Pets = () => {
   });
 
   const fetchCats = async () => {
-    const response = await axios.get("http://localhost:4000/cats");
+    const response = await axios.get("http://localhost:7000/cats");
     setCats(response.data);
     setFilteredCats(response.data);
   };
