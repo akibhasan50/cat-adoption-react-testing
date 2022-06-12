@@ -53,10 +53,8 @@ const Pets = () => {
   return (
     <div className="container">
       <div className="app-container">
-        <PetsContext.Provider value={{ cats: filteredCats, setCats }}>
-          <Filter filters={filters} setFilters={setFilters} />
-          <Cards />
-        </PetsContext.Provider>
+        <Filter filters={filters} setFilters={setFilters} />
+        <Cards cats={filteredCats} />
       </div>
     </div>
   );
